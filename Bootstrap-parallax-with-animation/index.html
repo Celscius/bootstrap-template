@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>[Your Name] - Backend Dev Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <!-- Parallax Hero -->
+    <div class="parallax">
+        <div class="hero-content">
+            <h1>Hey, I’m [Your Name]!</h1>
+            <p>Backend Dev & Bug-Squashing Wizard</p>
+        </div>
+    </div>
+
+    <!-- ScrollSpy Sidebar -->
+    <nav class="scrollspy-sidebar">
+        <a href="#about" class="nav-link" data-tooltip="About"><i class="fas fa-user"></i></a>
+        <a href="#tech-stack" class="nav-link" data-tooltip="Tech Stack"><i class="fas fa-code"></i></a>
+        <a href="#contact" class="nav-link" data-tooltip="Contact"><i class="fas fa-envelope"></i></a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I’m all about building small to medium apps that are slick, modular, and ready to roll. Think clean Node.js APIs, snappy React frontends, or Laravel backends that just work. I craft seamless API integrations, squash pesky bugs, and write code that’s easy to tweak or grow. Let’s build something dope!
+            </p>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="section">
+        <div class="container">
+            <h2>Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js & Express</h3>
+                    <p>Fast, modular APIs for seamless backend logic.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <p>Snappy, reusable frontends for great UX.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fab fa-laravel"></i>
+                    <h3>Laravel</h3>
+                    <p>Robust, modular backends with ease.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                    <p>Efficient databases with SQLite or PostgreSQL.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                    <p>Mobile apps or backend services when needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required/>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required/>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
